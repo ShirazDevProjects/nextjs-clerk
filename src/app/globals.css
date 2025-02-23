@@ -14,8 +14,98 @@
   }
 }
 
+html,
 body {
-  color: var(--foreground);
-  background: var(--background);
+  height: 100%;
+}
+
+body {
+  color: var(--background);
+  background: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.form-control,
+.form-control:focus {
+  border-radius: 0%;
+  color: white;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid white;
+  outline: none;
+  box-shadow: none;
+}
+
+.form-floating > label {
+  color: white;
+  padding: 1rem 0;
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+  color: white;
+}
+
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after,
+input:-internal-autofill-selected {
+  background-color: transparent !important;
+}
+
+.login-active .login-form,
+.signup-active .signup-form {
+  display: flex;
+  animation: fadeIn 1s ease-in;
+}
+
+.login-form,
+.signup-form {
+  display: none;
+  z-index: 1;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+}
+
+.black-panel {
+  position: absolute;
+  background-color: rgb(34, 34, 34);
+  width: 70%;
+  height: 160%;
+  z-index: 0;
+}
+
+.login-active .black-panel {
+  top: -40%;
+  left: -12%;
+  transform: rotate(20deg);
+  transition: left 1s, transform 1s;
+}
+
+.signup-active .black-panel {
+  top: -40%;
+  left: 43%;
+  transform: rotate(-12deg);
+  transition: left 1s, transform 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
