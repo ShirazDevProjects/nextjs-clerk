@@ -2,6 +2,11 @@
 
 A comprehensive demonstration of Clerk authentication integration with Next.js 15, showcasing various authentication patterns and implementations.
 
+## Youtube Next JS Clerk Playlist Link:
+
+[Youtube Channel](https://www.youtube.com/channel/UCTJbdyKM2dg2BnX4GvqLf6A?sub_confirmation=1 "Subscribe To Stay Updated")
+[Next JS Clerk Playlist](https://youtube.com/playlist?list=PLviSqSbWD51P_HHBaIn2c2auRsvQOgCkG&si=939iy4mgkPYGSC81 "Playlist Filled With Next JS & Clerk Videos")
+
 ## Overview
 
 This project demonstrates:
